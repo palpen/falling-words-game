@@ -1,0 +1,51 @@
+{
+  "gameplay": {
+    "targetWords": 10,
+    "baseSpeed": 1.0,
+    "speedIncreasePerLevel": 0.2,
+    "maxWordsOnScreen": 3,
+    "wordsPerDifficultyIncrease": 5
+  },
+  "difficulty": {
+    "1": {
+      "maxWordLength": 4,
+      "spawnDelay": 3000,
+      "speed": 1.0,
+      "maxWords": 2
+    },
+    "2": {
+      "maxWordLength": 5,
+      "spawnDelay": 2500,
+      "speed": 1.3,
+      "maxWords": 2
+    },
+    "3": {
+      "maxWordLength": 6,
+      "spawnDelay": 2000,
+      "speed": 1.6,
+      "maxWords": 3
+    },
+    "4": {
+      "maxWordLength": 7,
+      "spawnDelay": 1500,
+      "speed": 2.0,
+      "maxWords": 3
+    },
+    "5": {
+      "maxWordLength": 8,
+      "spawnDelay": 1200,
+      "speed": 2.5,
+      "maxWords": 4
+    }
+  },
+  "display": {
+    "fontSize": 48,
+    "fontFamily": "Comic Sans MS",
+    "typedColor": "#00FF00",
+    "untypedColor": "#FFD700"
+  },
+  "audio": {
+    "enabled": true,
+    "volume": 0.7
+  }
+}

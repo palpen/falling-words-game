@@ -1,0 +1,235 @@
+#hud {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    right: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    color: #fff;
+    font-size: 24px;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+#score-display {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 10px 20px;
+    border-radius: 8px;
+}
+
+#progress-display {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 10px 20px;
+    border-radius: 8px;
+    text-align: right;
+}
+
+#progress-bar {
+    width: 200px;
+    height: 20px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    overflow: hidden;
+    margin-top: 8px;
+}
+
+#progress-fill {
+    height: 100%;
+    width: 0%;
+    background: linear-gradient(90deg, #00ff00, #00cc00);
+    transition: width 0.3s ease;
+}
+
+.screen {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, 0.9);
+    padding: 40px 60px;
+    border-radius: 20px;
+    text-align: center;
+    color: #fff;
+    border: 4px solid #ffd700;
+}
+
+.screen h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+    color: #ffd700;
+}
+
+.screen p {
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+
+.big-button {
+    font-family: 'Comic Sans MS', 'Comic Neue', cursive, sans-serif;
+    font-size: 28px;
+    font-weight: bold;
+    padding: 15px 40px;
+    background: #ffd700;
+    color: #000;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    margin: 10px;
+    transition: transform 0.1s, box-shadow 0.1s;
+}
+
+.big-button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px #ffd700;
+}
+
+.big-button:active {
+    transform: scale(0.95);
+}
+
+.small-button {
+    font-family: 'Comic Sans MS', 'Comic Neue', cursive, sans-serif;
+    font-size: 18px;
+    padding: 10px 20px;
+    background: #888;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin: 5px;
+    transition: transform 0.1s;
+}
+
+.small-button:hover {
+    background: #aaa;
+    transform: scale(1.05);
+}
+
+.small-button:active {
+    transform: scale(0.95);
+}
+
+#settings-panel {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, 0.95);
+    padding: 30px;
+    border-radius: 15px;
+    color: #fff;
+    border: 3px solid #ffd700;
+    min-width: 400px;
+}
+
+#settings-panel h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #ffd700;
+    text-align: center;
+}
+
+.setting-group {
+    margin-bottom: 20px;
+}
+
+.setting-group label {
+    display: block;
+    font-size: 20px;
+    margin-bottom: 8px;
+}
+
+.setting-group input[type="range"] {
+    width: 100%;
+    height: 8px;
+    border-radius: 4px;
+    background: #444;
+    outline: none;
+    -webkit-appearance: none;
+}
+
+.setting-group input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #ffd700;
+    cursor: pointer;
+}
+
+.setting-group input[type="range"]::-moz-range-thumb {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #ffd700;
+    cursor: pointer;
+}
+
+.number-control {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-size: 24px;
+}
+
+.number-control button {
+    font-size: 24px;
+    font-weight: bold;
+    width: 40px;
+    height: 40px;
+    background: #ffd700;
+    color: #000;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.number-control button:hover {
+    background: #ffed4e;
+}
+
+.radio-group {
+    display: flex;
+    gap: 20px;
+    font-size: 18px;
+}
+
+.radio-group label {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.toggle-group button {
+    font-size: 20px;
+    font-weight: bold;
+    padding: 8px 30px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.toggle-on {
+    background: #00ff00;
+    color: #000;
+}
+
+.toggle-off {
+    background: #888;
+    color: #fff;
+}
+
+.button-group {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+#final-score {
+    font-size: 36px;
+    color: #ffd700;
+    margin: 20px 0;
+}

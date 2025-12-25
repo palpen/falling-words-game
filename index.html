@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Falling Words - Space Adventure</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/game.css">
+    <link rel="stylesheet" href="styles/ui.css">
+</head>
+<body>
+    <div id="game-container">
+        <canvas id="game-canvas"></canvas>
+
+        <div id="ui-overlay">
+            <div id="hud">
+                <div id="score-display">Score: <span id="score">0</span></div>
+                <div id="progress-display">
+                    <span id="words-completed">0</span>/<span id="target-words">10</span> words
+                    <div id="progress-bar">
+                        <div id="progress-fill"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="start-screen" class="screen">
+                <h1>🚀 Falling Words 🚀</h1>
+                <p>Type the asteroid words before they hit Earth!</p>
+                <button id="start-button" class="big-button">START</button>
+                <button id="settings-button" class="small-button">Settings</button>
+            </div>
+
+            <div id="win-screen" class="screen hidden">
+                <h1>🎉 YOU WIN! 🎉</h1>
+                <p>Great job typing all those words!</p>
+                <div id="final-score">Score: <span id="final-score-value">0</span></div>
+                <button id="play-again-button" class="big-button">PLAY AGAIN</button>
+            </div>
+
+            <div id="settings-panel" class="hidden">
+                <h2>Settings</h2>
+
+                <div class="setting-group">
+                    <label for="fall-speed">Fall Speed: <span id="fall-speed-value">1.0x</span></label>
+                    <input type="range" id="fall-speed" min="0.5" max="2.0" step="0.1" value="1.0">
+                </div>
+
+                <div class="setting-group">
+                    <label for="target-words-setting">Words to Win:</label>
+                    <div class="number-control">
+                        <button id="target-words-minus">-</button>
+                        <span id="target-words-value">10</span>
+                        <button id="target-words-plus">+</button>
+                    </div>
+                </div>
+
+                <div class="setting-group">
+                    <label>Starting Difficulty:</label>
+                    <div class="radio-group">
+                        <label><input type="radio" name="difficulty" value="1"> Easy</label>
+                        <label><input type="radio" name="difficulty" value="2" checked> Normal</label>
+                        <label><input type="radio" name="difficulty" value="3"> Hard</label>
+                    </div>
+                </div>
+
+                <div class="setting-group">
+                    <label>Sound:</label>
+                    <div class="toggle-group">
+                        <button id="sound-toggle" class="toggle-on">ON</button>
+                    </div>
+                </div>
+
+                <div class="button-group">
+                    <button id="reset-defaults" class="small-button">RESET TO DEFAULTS</button>
+                    <button id="close-settings" class="big-button">CLOSE</button>
+                </div>
+            </div>
+        </div>
+
+        <div id="current-input">Typing: <span id="typed-text"></span></div>
+    </div>
+
+    <script type="module" src="scripts/main.js"></script>
+</body>
+</html>

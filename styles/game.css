@@ -1,0 +1,49 @@
+#game-canvas {
+    image-rendering: -moz-crisp-edges;
+    image-rendering: -webkit-crisp-edges;
+    image-rendering: pixelated;
+    box-shadow: inset 0 0 100px rgba(0, 0, 0, 0.5);
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+.screen {
+    animation: float 3s ease-in-out infinite;
+}
+
+@keyframes glow {
+    0%, 100% {
+        box-shadow: 0 0 20px #ffd700;
+    }
+    50% {
+        box-shadow: 0 0 40px #ffd700, 0 0 60px #ffd700;
+    }
+}
+
+.big-button {
+    animation: glow 2s ease-in-out infinite;
+}
+
+@keyframes twinkle {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.3;
+    }
+}
+
+#hud {
+    animation: none;
+}
+
+#progress-fill {
+    box-shadow: 0 0 10px #00ff00;
+}
