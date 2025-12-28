@@ -2,6 +2,8 @@
 
 A space-themed typing game where words fall from the sky like asteroids, and you must type them before they hit Earth!
 
+![Falling Words Game Demo](assets/demo.gif)
+
 ## Features
 
 - **Space Theme**: Beautiful animated space background with twinkling stars and Earth
@@ -17,10 +19,14 @@ A space-themed typing game where words fall from the sky like asteroids, and you
 
 ## How to Play
 
-1. Open `index.html` in a web browser
-2. Click **START** to begin
-3. Type the falling words before they hit Earth
-4. Reach your target word count to win!
+1. Start a local server (required for ES6 modules):
+   ```bash
+   python3 -m http.server 8000
+   ```
+2. Open **http://localhost:8000** in your browser
+3. Click **START** to begin
+4. Type the falling words before they hit Earth
+5. Reach your target word count to win!
 
 ### Controls
 
